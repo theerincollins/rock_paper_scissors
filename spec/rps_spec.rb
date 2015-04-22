@@ -13,4 +13,8 @@ describe('String#rps') do
   end
 
 
+    it('returns true if rock is the object and scissors is the argument') do
+      expect("rock".rps("rock")).to(eq("TIE"))
+      end
+
 end

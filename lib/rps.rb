@@ -1,30 +1,41 @@
 class String
   define_method(:rps) do |x|
+      if (self.eql?("rock").!() && self.eql?("scissors").!() && self.eql?("paper").!())
+          puts = "Please go back and use write one of the three options"
 
-      if (self == "rock" && x == "scissors")
-        puts = "player 1 wins"
+      elsif (self == "rock" && x == "scissors")
         true
+        puts = "player 1 wins"
 
       elsif (self == "scissors" && x == "paper")
-        puts = "player 1 wins"
         true
+        puts = "player 1 wins"
 
       elsif (self == "paper" && x == "rock")
-          puts = "player 1 wins"
           true
+          puts = "player 1 wins"
 
       elsif (self == "scissors" && x == "rock")
-        puts = "player 2 wins"
         false
+        puts = "player 2 wins"
 
       elsif (self == "rock" && x == "paper")
-        puts = "player 2 wins"
         false
+        puts = "player 2 wins"
 
       elsif (self == "paper" && x == "scissors")
-        puts = "player 2 wins"
         false
-        end
+        puts = "player 2 wins"
 
+
+      elsif (self == "scissors" && x == "scissors")
+          puts = "TIE"
+
+      elsif (self == "rock" && x == "rock")
+          puts = "TIE"
+
+      else (self == "paper" && x == "paper")
+          puts = "TIE"
+      end
    end
 end
